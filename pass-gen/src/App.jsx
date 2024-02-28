@@ -5,7 +5,6 @@ function App() {
   const [numbers, setNumbers] = useState(false);
   const [chars, setChars] = useState(false);
   const [pass, setPass] = useState("");
-
   //use ref hook
   const passRef = useRef(null);
   const passGen = useCallback(() => {
