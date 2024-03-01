@@ -7,11 +7,11 @@ function App() {
   const [pass, setPass] = useState("");
   //use ref hook
   const passRef = useRef(null);
-  const passGen = useCallback(() => {
+  const passGen = useCallback(() => {   //usecallback(()=> {},[])
     let password = "";
     let str = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM";
     if (numbers) {
-      str += "0123456789";
+      str += "0123456789"; //ZGPCcw3ztZ
     }
     if (chars) {
       str += "!@#$%^&*()+_}{>?";
@@ -26,7 +26,7 @@ function App() {
 
   const copyPassword = useCallback(() => {
     passRef.current?.select();
-    passRef.current?.setSelectionRange(0, 100);
+    // passRef.current?.setSelectionRange(0, 100);
     window.navigator.clipboard.writeText(pass);
   }, [pass]);
 

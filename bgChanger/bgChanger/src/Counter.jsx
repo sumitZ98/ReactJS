@@ -10,7 +10,7 @@ function Counter() {
     }
     let imgname = 'abhsdbakdb'
   return (
-    <div className='something' style={{background: URL(.svg)}}>
+    <div className='something'>
       <h1>Counter: {count}</h1>
       <button onClick={addNum}>Add +</button>
       <button onClick={subNum}>Sub -</button>
