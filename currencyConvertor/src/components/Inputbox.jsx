@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 function InputBox({
     label,
     amount,
@@ -45,5 +46,25 @@ function InputBox({
         </div>
     );
 }
+
+InputBox.propTypes = {
+    label: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
+    onAmountChange: PropTypes.func.isRequired,
+    onCurrencyChange: PropTypes.func.isRequired,
+    currencyOption: PropTypes.arrayOf(PropTypes.string),
+    selectCurrency: PropTypes.string,
+    amountDisable: PropTypes.bool,
+    currencyDisable: PropTypes.bool,
+    className: PropTypes.string
+};
+
+InputBox.defaultProps = {
+    currencyOption: [],
+    selectCurrency: "usd",
+    amountDisable: false,
+    currencyDisable: false,
+    className: ""
+};
 
 export default InputBox;
