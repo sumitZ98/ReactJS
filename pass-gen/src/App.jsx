@@ -19,6 +19,7 @@ function App() {
 
     for (let i = 1; i <= length; i++) {
       let characters = Math.floor(Math.random() * str.length + 1);
+      console.log(characters);
       password += str.charAt(characters);
       setPass(password);
     }

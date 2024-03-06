@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { InputBox } from "./components";
 import useCurrencyinfo from "./hooks/useCurrencyinfo";
-import { object } from "prop-types";
+// import { object } from "prop-types";
 function App() {
   const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("usd");
@@ -36,6 +36,7 @@ function App() {
                 label="From"
                 amount={amount}
                 currencyOptions={options}
+                // eslint-disable-next-line no-unused-vars
                 onCurrencyChange={(currency) => setAmount(amount)}
                 selectCurrency={from}
                 onAmountChange={(amount)=> {
