@@ -4,7 +4,7 @@ function User() {
     const params = useParams();
   return (
     <div>
-      I am {params.username}
+      I am {params.username} 
       <img src={img} alt="" />
     </div>
   )
