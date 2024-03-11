@@ -1,4 +1,4 @@
-
+import {img1} from '../public/'
 import Counter from './Counter';
 
 function App() {
