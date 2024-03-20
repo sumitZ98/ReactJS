@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark{
+    background-color: darkslategray;
+    color: white;
+}
+.bt{
+    background-color: lightseagreen;
+    color: white;
+}
+.color{
+    background-color: lightsteelblue;
+}
